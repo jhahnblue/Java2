@@ -25,8 +25,8 @@ public class MultiCatch {
 		// 2. 다중 try-catch
 		
 		try {
-			System.out.println(3/0);
-			int num = Integer.parseInt("10A");
+			System.out.println(3/0); //이미 위에서 예외 처리가 발생하여 밑에 있는걸 무시하고 catch로 넘어감
+			int num = Integer.parseInt("10A"); 
 		}catch(ArithmeticException e) {
 			System.out.println("숫자는 0으로 나눌 수 없습니다");
 		}catch(NumberFormatException e) {
