@@ -17,7 +17,7 @@ public class TryCatchFinally {
 		
 		try {
 			System.out.println(3/0);
-		}catch(ArithmeticException e) { // 실행 전까지는 오류를 알수 없다.
+		}catch(ArithmeticException e) { // 실행 전까지는 오류를 알수 없다. + 분모가 0일 때 예외처리 구문
 			System.out.println("숫자는 0으로 나눌 수 없습니다.");
 		}finally {
 			System.out.println("프로그램 종료");
